@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sistema de Alerta de Enchentes - RS</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <!-- Cabeçalho -->
+  <header>
+    <h1>Sistema de Alerta de Enchentes - RS</h1>
+    <p>Informações atualizadas e seguras para proteger você e sua família.</p>
+  </header>
+
+  <!-- Seção de Alertas -->
+  <section class="alerta">
+    <h2>🚨 Alertas em Tempo Real</h2>
+    <div class="alerta-container">
+      <p>
+        <strong>Nível do Rio:</strong> Alto - Risco de enchente nas próximas
+        24 horas.
+      </p>
+      <p><strong>Status:</strong> Evacuação recomendada para áreas baixas.</p>
+      <!-- Botão para acionar modal -->
+      <button type="button" class="btn-ver-mais" data-toggle="modal" data-target="#ModalLongoExemplo">
+        Ver Detalhes
+      </button>
+    </div>
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="ModalLongoExemplo" tabindex="-1" role="dialog" aria-labelledby="TituloModalLongoExemplo"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <h4>Recomendações de Segurança:</h4>
+          <ul>
+            <li>Procure abrigo em locais elevados e evite deslocamentos desnecessários.</li>
+            <li>Mantenha documentos importantes, medicamentos e itens de emergência em um local seguro e de fácil acesso.</li>
+            <li>Desconecte eletrodomésticos das tomadas e desligue o fornecimento de gás e eletricidade, se possível, para evitar acidentes.</li>
+            <li>Fique atento aos comunicados oficiais da Defesa Civil e das autoridades locais, que atualizam constantemente as condições da enchente e as instruções para a população.</li>
+            <li>Verifique rotas seguras e abrigos temporários próximos através do nosso mapa interativo.</li>
+          </ul>
+  
+          <h4>Números de Emergência:</h4>
+          <ul>
+            <li><strong>Defesa Civil:</strong> 199</li>
+            <li><strong>Corpo de Bombeiros:</strong> 193</li>
+            <li><strong>Polícia Militar:</strong> 190</li>
+            <li><strong>Samu:</strong> 192</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <!-- Seção de Mapa Interativo -->
+  <section class="mapa">
+    <h2>🗺️ Mapa de Áreas Atingidas e Rotas Seguras</h2>
+    <div class="mapa-placeholder">
+      <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1pxLt25MVRu0JKkTeTBbg_6FNon5wiAo&ehbc=2E312F&noprof=1"
+        width="1200px" height="400px"></iframe>
+
+      <iframe src="https://www.google.com/maps/d/embed?mid=1ZlKA__gK8tH-WY6mbDeQzltsiwao7Q8&hl=pt-BR&ehbc=2E312F"
+        width="1200px" height="400px"></iframe>
+    </div>
+  </section>
+
+  <!-- Seção de Informações Educativas -->
+  <section class="info-educativa">
+    <h2>📚 Como se Preparar para uma Enchente</h2>
+    <ul>
+      <li>Mantenha documentos importantes em locais secos e seguros.</li>
+      <li>Prepare um kit de emergência com alimentos, água e remédios.</li>
+      <li>Saiba onde estão os abrigos temporários mais próximos.</li>
+      <li><h3>Apoio Pós-Enchente:</h3>
+      <p>Após o retorno às áreas afetadas, busque apoio nos Centros de Referência em Assistência Social (CRAS)
+        para atualizar seu Cadastro Único (CadÚnico) e garantir acesso a benefícios sociais, como o Bolsa Família,
+        o programa SOS Rio Grande do Sul, e o Devolve ICMS.</p></li>
+    </ul>
+
+    <button type="button" class="btn-ver-mais" data-toggle="modal" data-target="#exampleModal"
+      data-whatever="@mdo">Cadastre-se</button>
+
+      <a href="https://app.powerbi.com/view?r=eyJrIjoiNThhYTZmMGMtZDhkNy00OTEyLTkzNmEtYjU1NWIyMTZmNTVjIiwidCI6IjE1ZGNkOTA5LThkYzAtNDBlOS1hMWU1LWNlY2IwNTNjZGQxYSJ9" target="_blank">   <button type="button" class="btn-ver-mais" data-toggle="modal" data-whatever="@mdo">Abrigos</button></a>
+
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Formulário de Cadastro receba notícias em tempo real</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form onsubmit="alert('Formulario enviado');" action="#" method="get" name="signup" target="_blank"
+              autocomplete="on">
+              <div class="form-group">
+                <label for="nome" class="col-form-label">Nome:</label>
+                <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome Completo" required />
+              </div>
+              <div class="form-group">
+                <label for="telefone" class="col-form-label">Telefone:</label>
+                <input type="tel" class="form-control" id="telefone" name="telefone" placeholder="99 9 99999999 "
+                  required />
+              </div>
+              <div class="form-group">
+                <label for="email" class="col-form-label">Email:</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Seu melho E-mail"
+                  required />
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção de Rodapé -->
+  <footer>
+    <p>
+      &copy; 2024 Sistema de Alerta de Enchentes - Desenvolvido durante o
+      Hackathon 🌊
+    </p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
