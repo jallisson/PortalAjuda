@@ -50,6 +50,16 @@ header {
     margin-top: 10px;
 }
 
+.btn-abrigos {
+    background-color: #003366;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
 .btn-ver-mais:hover {
     background-color: #005599;
 }
@@ -71,6 +81,9 @@ header {
     align-items: center;
     font-size: 18px;
     color: #007bb5;
+    width: 100%;
+    max-width: 100%;
+    height: auto; /* Ajusta a altura para uma proporção melhor em telas menores */
 }
 
 /* Seção de Informações Educativas */
@@ -107,4 +120,39 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+}
+
+/* Ajustes para dispositivos móveis */
+@media (max-width: 768px) {
+    .mapa-placeholder iframe {
+        width: 100%;
+        height: 300px; /* Reduz o tamanho do mapa */
+    }
+
+    .btn-ver-mais  {
+        display: block;
+        width: 100%; /* Garante que os botões ocupem a largura total */
+        margin: 10px 0; /* Adiciona espaço entre os botões */
+    }
+
+    .btn-abrigos  {
+        display: block;
+        width: 100%; /* Garante que os botões ocupem a largura total */
+        margin: 10px 0; /* Adiciona espaço entre os botões */
+    }
+
+    .alerta, .info-educativa, .mapa {
+        margin: 10px; /* Ajusta as margens para dispositivos menores */
+        padding: 15px;
+        margin: 0px 0px 50px;
+    }
+    
+    header, footer {
+        padding: 15px;
+        text-align: center; /* Centraliza o texto no header e footer */
+    }
+
+    /* Oculta parte do conteúdo ou modifica layout conforme necessário */
+
+    
 }
