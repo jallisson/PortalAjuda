@@ -139,6 +139,7 @@ footer {
         display: block;
         width: 100%; /* Garante que os botões ocupem a largura total */
         margin: 10px 0; /* Adiciona espaço entre os botões */
+        margin-bottom: 20px;
     }
 
     .alerta, .info-educativa, .mapa {
