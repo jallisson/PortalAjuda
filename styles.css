@@ -64,6 +64,10 @@ header {
     background-color: #005599;
 }
 
+.btn-abrigos:hover {
+    background-color: #005599;
+}
+
 /* Seção de Mapa */
 .mapa {
     background-color: #e0f7fa;
